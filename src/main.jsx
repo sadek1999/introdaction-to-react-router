@@ -13,14 +13,16 @@ import Contact from './assets/components/contact/Contact.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Head></Head>,
+    element:<Home></Home>,
     children:[
       {
         path:"/about",
-        element:<Home></Home>
+        element:<Head>
+          
+        </Head>
       },
       {
-         path:"/Contact",
+         path:"/contact",
          element:<Contact></Contact>
       }
     ]

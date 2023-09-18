@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 
 
 const Head = () => {
@@ -9,7 +10,8 @@ const Head = () => {
              <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/contact">Contact Us</a>
-                </nav>  
+            </nav>
+            <Outlet></Outlet>  
             
         </div>
     );
