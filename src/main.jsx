@@ -9,6 +9,8 @@ import {
 import Head from './assets/components/Head/Head.jsx';
 import Home from './assets/components/Home/Home.jsx';
 import Contact from './assets/components/contact/Contact.jsx';
+import Users from './assets/components/users/Users.jsx';
+import About from './assets/components/about/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,13 +19,15 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/about",
-        element:<Head>
-          
-        </Head>
+        element:<About></About>
       },
       {
          path:"/contact",
          element:<Contact></Contact>
+      },
+      {
+        path:'/Users',
+        element:<Users></Users>
       }
     ]
   },
