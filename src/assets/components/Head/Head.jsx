@@ -11,6 +11,7 @@ const Head = () => {
              <Link to={"/about"}>About</Link>
                 <Link to={"/contact"}>Contact</Link>
                 <Link to={"/Users"}>Users</Link>
+                <Link to={'/post'}>  Post </Link>
                 
             </nav>
            
