@@ -1,6 +1,8 @@
 
-import { key } from "localforage";
-import { useLoaderData } from "react-router-dom";
+
+import {  useLoaderData } from "react-router-dom";
+import Posts from "../posts/posts";
+
 
 
 const Post = () => {
@@ -9,9 +11,7 @@ const Post = () => {
         <div>
             <h3>this is post page : {post.length}</h3>
             {
-                post.map(item=>
-                    
-                    <h2 key={item.id}>{item.title}</h2>)
+                post.map(item=><Posts key={item.id} item={item}></Posts>)
             }
         </div>
     );
